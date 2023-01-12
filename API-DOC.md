@@ -4,7 +4,7 @@
 
 Login user on the system
 
-**[POST]** : `/auth/auth/`
+**[POST]** : `/auth/login/`
 
 **Input data**
 
