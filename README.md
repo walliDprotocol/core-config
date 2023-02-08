@@ -81,7 +81,7 @@ Paramaters to create a new workspace
 ```javascript
 domain : domain for workspace
 name : name of the workspace
-accountId : account id of the account
+workspaceId : account id of the account
 status : A=active | X=cancelled
 ```
 
@@ -89,6 +89,35 @@ Example for creating a new workspace
 ```javascript
 const { workspace } = require("./index");
 
-let workspace = await workspace.update(accountId, domain, name, status);
+let workspace = await workspace.update(workspaceId, domain, name, status);
+```
+
+# Configuration
+
+## **Creates new configuration on workspace  **
+
+Paramaters to create a new configuration
+
+```javascript
+workspaceId : domain for workspace
+name : name of the workspace
+displayName : account id of the account 
+displayName : account id of the account 
+type : VERIFICATION | AUTHORIZATION
+//example of a  configuration for OAUTH type
+providers : [{
+        "name" : "twitter|facebook|discord|linkedin|gitub",
+        "type" : "OAUTH",
+        "clientId": "<clientId>",
+        "clientSecret" : "<clientSecret>"
+}...,
+{}]
+```
+
+Example for creating a new workspace
+```javascript
+const { configuration } = require("./index");
+
+let workspace = await workspace.create(workspaceId, name, displayName, type, providers);
 ```
 
