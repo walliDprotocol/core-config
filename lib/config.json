@@ -1,0 +1,36 @@
+{
+    "BASE_URL" : "",
+    "AUTH" : {
+
+    },
+    "USERS" : {
+        "ADD_MEMBER" : {
+            "URL" : "/users/create",
+            "PARAMS":  ["accountId", "role", "username", "email"]
+        },
+        "EDIT" : {
+            "URL" : "/users/update",
+            "PARAMS":  ["accountId", "role", "username", "email", "status"]
+        }
+    },
+    "WORKSPACE" : {
+        "CREATE" : {
+            "URL" : "/workspace/create",
+            "PARAMS":  ["domain", "name", "accountId"]
+        },
+        "update" : {
+            "URL" : "/workspace/create",
+            "PARAMS":  ["domain", "name", "accountId"]
+        }
+    },
+    "config" : {
+        "CREATE" : {
+            "URL" : "/config/create",
+            "PARAMS":  ["workspaceId", "name", "displayName", "type", "providers"]
+        },
+        "LIST" : {
+            "URL" : "/config/list",
+            "PARAMS":  ["workspaceId"]
+        }
+    }
+}
