@@ -105,13 +105,16 @@ displayName : account id of the account
 displayName : account id of the account 
 type : VERIFICATION | AUTHORIZATION
 //example of a  configuration for OAUTH type
-providers : [{
+socialProviders : [{
         "name" : "twitter|facebook|discord|linkedin|gitub",
-        "type" : "OAUTH",
         "clientId": "<clientId>",
         "clientSecret" : "<clientSecret>"
-}...,
-{}]
+}],
+blockchainAssets : [{
+        "address" : "<contract adddress>",
+        "type": "ERC20|ERC721|ERC1155",
+        "id" : "<clientSecret>"
+}]
 ```
 
 Example for creating a new workspace
