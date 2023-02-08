@@ -121,3 +121,8 @@ const { configuration } = require("./index");
 let workspace = await workspace.create(workspaceId, name, displayName, type, providers);
 ```
 
+** More about prodivers configurations **
+
+On a configuration there is a 
+
+
