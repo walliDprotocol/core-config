@@ -1,8 +1,9 @@
+
 # Auth
 
 ## ** Login a user  **
 
-Before a user do any operation user must call login operation, then the lib will uses that token to authenticate user on the system.
+Before performing any operation, a user must first call the login operation. This will provide the library with a token which it will use to authenticate the user on the system.
 
 ## ** login a user in the system **
 Parameters for the login
@@ -23,6 +24,14 @@ let token = await users.login(accountKey, accountSecret, userId);
 ## **Create new user for given account **
 
 Requirement parameters to create a new user on the system
+
+The `Create Users` function takes four parameters:
+
+- `accountId`: the account of the account user belong
+- `role`: role of the user in the system.
+- `email`: emai of the user in the system.
+- `username`:username of user .
+
 
 ```javascript
 accountId : account id of the account you want to update
