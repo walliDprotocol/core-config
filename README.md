@@ -1,11 +1,11 @@
 
 # Auth
 
-## ** Login a user  **
+##  Login a user  
 
 Before performing any operation, a user must first call the login operation. This will provide the library with a token which it will use to authenticate the user on the system.
 
-## ** login a user in the system **
+## `login(accountKey, userId, userSecret)`
 
 Parameters for the login
 
@@ -20,7 +20,7 @@ let token = await users.login(accountKey, userId, userSecret)
 ```
 
 
-## **Create new user for given account **
+## `create(accountId, role, username, email)`
 
 Requirement parameters to create a new user on the system
 
@@ -38,7 +38,7 @@ const { users } = require("./index");
 let newUser = await users.create(accountId, role, username, email);
 ```
 
-## **Update a user for given account **
+## `update(accountId, role, username, email)`
 
 The update user Lib is responsible for updating the information of a specific user in the database
 
@@ -58,7 +58,7 @@ let updatedUser = await users.update(accountId, role, username, email);
 A workspace acts as a container for your projects and allows you to manage different configurations for each project. It provides a separate space for managing different project configurations and enables developers to switch between projects without affecting the settings of other projects.
 
 
-## `workspace.create(workspaceId, name, displayName, type, providers)`
+## `create(workspaceId, name, displayName, type, providers)`
 
 Paramaters to create a new configuration
 
