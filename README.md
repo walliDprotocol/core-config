@@ -125,7 +125,7 @@ You can setup the workspace configration for `authorization` and `verification`
 
 Setup social profiles for `authorization` and `verification` you should supply the following params
 
-     
+
 ```
 {    
         name         : twitter|facebook|discord|linkedin|gitub",
