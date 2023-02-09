@@ -29,16 +29,10 @@ The `Create Users` function takes four parameters:
 
 - `accountId`: the account of the account user belong
 - `role`: role of the user in the system.
-- `email`: emai of the user in the system.
+- `email`: email of the user in the system.
 - `username`:username of user .
 
 
-```javascript
-accountId : account id of the account you want to update
-role : member | admin | developer
-username : username of the user
-email : email of the user
-```
 
 ```javascript
 const { users } = require("./index");
