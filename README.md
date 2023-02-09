@@ -1,5 +1,4 @@
 
-# Auth
 
 ##  Login a user  
 
@@ -19,6 +18,7 @@ const { auth } = require("./index");
 let token = await users.login(accountKey, userId, userSecret)
 ```
 
+## User operations
 
 ## `create(accountId, role, username, email)`
 
